@@ -1,0 +1,45 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    background-color: rgb(218, 165, 62);
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .back-button {
+    background: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  
+  .sushi-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .sushi-card {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: #fff;
+  }
+  
+  .sushi-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #ff5722;
+  }
+  

@@ -1,0 +1,12 @@
+<nav class="navbar">
+  </nav>
+  
+  <div class="sushi-details" *ngIf="sushi">
+    <img [src]="sushi.image" alt="{{ sushi.name }}">
+    <h2>{{ sushi.name }}</h2>
+    <p>{{ sushi.description }}</p>
+    <p><strong>შემადგენლობა:</strong> {{ sushi.ingredients }}</p>
+    <p class="price">{{ sushi.price }} GEL</p>
+    <button (click)="goBack()" class="back-button">Back</button>
+  </div>
+  
