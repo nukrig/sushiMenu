@@ -1,15 +1,16 @@
-<nav class="navbar">
-    <img src="assets/lion-logo-icon.png" alt="Logo" class="logo">
-    <button routerLink="/" class="back-button">Back</button>
+<div class="main-menu">
+  <nav class="navbar">
+      <img routerLink="/" src="assets/lion-logo-icon.png" alt="Logo" class="logo">
+      <button routerLink="/" class="button">Back</button>
   </nav>
-  
-  <div class="sushi-container">
-    <div class="sushi-card" *ngFor="let sushi of sushiList">
-      <img [src]="sushi.image" alt="{{ sushi.name }}">
-      <h3>{{ sushi.name }}</h3>
-      <p>{{ sushi.description }}</p>
-      <p class="price">{{ sushi.price }} GEL</p>
-      <button (click)="goToDetails(sushi.id)">დეტალურად</button>
+    <div class="sushi-container">
+      <div class="sushi-card" *ngFor="let sushi of sushiList">
+        <img [src]="sushi.image" alt="{{ sushi.name }}">
+        <h3>{{ sushi.name }}</h3>
+        <p class="description">{{ sushi.description }}</p>
+        <p class="price">{{ sushi.price }} &#x20BE;</p>
+        <button class="button" (click)="goToDetails(sushi.id)">დეტალურად</button>
+      </div>
     </div>
-  </div>
+</div>
   
