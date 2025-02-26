@@ -55,7 +55,7 @@
     background: #fff;
     transition: 0.3s ease;
   }
-  .sushi-card:hover {
+  .sushi-card:hover , .sushi-card:active {
     filter: brightness(0.9);
 }
   
