@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { specialMenuSushiList } from '../../data/special-menu-data';
 import { CommonModule } from '@angular/common';
+import { SpecialSushi } from '../../../interFaces/specialSushi.interface';
 
 @Component({
   selector: 'app-product-card',
@@ -10,7 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './product-card.component.scss'
 })
 export class ProductCardComponent {
-  @Input() sushiList: any[] = [];
+  @Input() sushiList: SpecialSushi[] = [];
 
   constructor(private router: Router) {}
 

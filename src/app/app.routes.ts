@@ -6,9 +6,6 @@ import { SushiDetailsComponent } from './pages/sushi-details/sushi-details.compo
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  // { path: 'main-menu', component: MainMenuComponent},
-  // { path: 'main-menu/sushi/:id', component: SushiDetailsComponent,data: { renderMode: 'ssr' } },
   { path: 'special-menu', component: SpecialMenuComponent },
-  // { path: 'special-menu/sushi/:id', component: SushiDetailsComponent,data: { renderMode: 'ssr' } },
   { path: '**', redirectTo: '' }
 ];
