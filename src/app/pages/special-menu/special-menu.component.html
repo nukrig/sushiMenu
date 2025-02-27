@@ -1,17 +1,5 @@
 <div class="special-menu">
-  <nav class="navbar">
-      <img routerLink="/" src="assets/lion-logo-icon.png" alt="Logo" class="logo">
-      <button routerLink="/" class="button">Back</button>
-    </nav>
-    
-    <div class="sushi-container">
-      <div class="sushi-card" *ngFor="let sushi of sushiList">
-        <img [src]="sushi.image" alt="{{ sushi.name }}">
-        <h3>{{ sushi.name }}</h3>
-        <p class="description">{{ sushi.description }}</p>
-        <p class="price">{{ sushi.price }} &#x20BE;</p>
-        <button class="button" (click)="goToDetails(sushi.id)">დეტალურად</button>
-      </div>
-    </div>
+  <app-nav-bar > </app-nav-bar>
+  <app-product-card [sushiList]="specialMenuSushiList"></app-product-card>
 </div>
   

@@ -1,28 +1,5 @@
-.main-menu{
-    min-height: calc(100vh - 80px); 
-    background-color: rgb(255, 210, 120);
-}
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 30px;
-    height: 80px;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgb(218, 165, 62);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .logo {
-    margin-left: -30px;
-    height: 200px;
-  }
-  
-  .button {
-    background: #4CAF50;
+ .button {
+    background: rgb(218, 165, 62);
     border: none;
     color: white;
     font-weight: bold;
@@ -39,7 +16,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin-top: 80px;
+    margin-top: 90px;
     padding: 20px; 
   }
   
@@ -55,9 +32,6 @@
     background: #fff;
     transition: 0.3s ease;
   }
-  .sushi-card:hover , .sushi-card:active {
-    filter: brightness(0.9);
-}
   
   .sushi-card img {
     width: 50%;
@@ -69,6 +43,7 @@
     align-items: center;
     justify-content: center;
   }
+  
   .price {
     font-weight: bold;
     color: #ff5722;
@@ -78,4 +53,3 @@
         width:100%;
       }
   }
-  

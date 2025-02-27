@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <div class="logo">
+      <img routerLink="/" src="assets/lion-logo-icon.png" alt="Logo" />
+    </div>
+    <div class="menu-icon" (click)="toggleMenu()">
+      &#9776;
+    </div>
+    <ul class="menu" [class.open]="menuOpen">
+      <li><a routerLink="/sushi">სუში</a></li>
+      <li><a routerLink="/rolls">როლები</a></li>
+      <li><a routerLink="/special-menu">საფირმო მენიუ</a></li>
+      <li><a routerLink="/drinks">სასმელები</a></li>
+    </ul>
+</nav>
